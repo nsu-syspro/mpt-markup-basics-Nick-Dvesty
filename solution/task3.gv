@@ -1,0 +1,17 @@
+digraph G {
+    rankdir=LR;
+    size="8,5"
+
+    // Указываем состояния
+    node [shape=circle];
+    q0 [label="S"]; // Начальное состояние
+    q1 [label="0"];
+    q2 [label="1"];
+    q3 [label="2" shape=doublecircle];
+
+    q0 -> q1;
+    q1 -> q2 [label="a"];
+    q1 -> q2 [label="b"];
+    q2 -> q2 [label="c"];
+    q2 -> q3 [label="d"];
+}
